@@ -28,7 +28,7 @@ export const login = (email, password) => {
   return signInWithEmailAndPassword(auth, email, password);
 };
 
-export const logout = () => {
+export const logout = (auth, email, password) => {
   signOut(auth);
 };
 
